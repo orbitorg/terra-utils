@@ -1,4 +1,4 @@
-import { isDenom, isDenomTerra } from "../src/is"
+import { isDenom, isDenomTerra, isDenomIBC } from "../src/is"
 
 test("isDenomTerra", () => {
   expect(isDenomTerra("uusd")).toBeTruthy()
@@ -9,4 +9,9 @@ test("isDenom", () => {
   expect(isDenom("uusd")).toBeTruthy()
   expect(isDenom("uluna")).toBeTruthy()
   expect(isDenom("ncheq")).toBeTruthy()
+})
+
+test("isDenomIBC", () => {
+  expect(isDenomIBC("ibc/testaddress")).toBeTruthy()
+  expect(isDenomIBC("uluna")).toBeFalsy()
 })
