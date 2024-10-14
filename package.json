@@ -1,8 +1,15 @@
 {
-  "name": "@terra-money/terra-utils",
+  "name": "terra-classic-utils",
   "version": "1.1.1",
   "author": "Terra <engineering@terra.money> (https://terra.money)",
-  "repository": "github:terra-money/terra-utils",
+  "repository": "github:orbitlabs/terra-utils",
+  "maintainers": [
+		{
+			"name": "OrbitLabs",
+			"email": "orbitlabs.work@proton.me",
+			"url": "https://orbitlabs.space"
+		}
+	],
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/terra-utils.esm.js",

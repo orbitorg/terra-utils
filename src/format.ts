@@ -97,9 +97,9 @@ export const readDenom = (denom: string) => {
     return ""
   } else {
     if (isDenomLuna(denom)) {
-      return "Luna"
+      return "Lunc"
     } else if (isDenomTerra(denom)) {
-      return `${denom.slice(1, 3).toUpperCase()}T`
+      return `${denom.slice(1, 3).toUpperCase()}TC`
     } else if (isDenomIBC(denom)) {
       return denom.replace("ibc/", "")
     } else if (isDenomGamm(denom)) {

@@ -32,8 +32,8 @@ test("toAmount", () => {
 })
 
 test("readDenom", () => {
-  expect(readDenom("uluna")).toBe("Luna")
-  expect(readDenom("uusd")).toBe("UST")
+  expect(readDenom("uluna")).toBe("Lunc")
+  expect(readDenom("uusd")).toBe("USTC")
   expect(readDenom("uatom")).toBe("ATOM")
 })
 
